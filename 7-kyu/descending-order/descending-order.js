@@ -1,5 +1,8 @@
-function descendingOrder(n){
-  //...
-  return parseInt(n.toString().split('').sort((a,b)=> b-a).join(''),10);
+function descendingOrder(n) {
+  return Number( n.toString()
+     .split("")
+     .sort((a, b) => b - a)
+     .join("")
+ );
 }
-console.log(descendingOrder(12345));
+console.log(descendingOrder(123456789));
