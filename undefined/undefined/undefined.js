@@ -1,20 +1,7 @@
-function sumDigPow(a, b) {
-  const result = [];
+function combat(health, damage) {
+ let b = health - damage;
+  if(b < 0 ) return 0;
 ​
-  for (let i = a; i <= b; i++) {
-    let sum = String(i)
-      .split("")
-      .reduce(
-        (acc, digit, index) =>
-          acc + Math.pow(Number(digit), index + 1),
-        0
-      );
-​
-    if (sum === i) {
-      result.push(i);
-    }
-  }
-​
-  return result;
+return b; 
+  
 }
-​
